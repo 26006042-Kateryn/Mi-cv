@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title> Mi CV Online - Kateryn Aydeé Guarcas Alvarez</title>
+      <link href="https://fonts.goolgeapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+      <style>
+        :root {
+          --Primary-color: #2d3436;
+          --accent-color: #0984e3;
+        --bg-color:#f5f6fa;
+      --card-bg: #ffffff;
+    --text-muted: #636e72;
+         }
+
+         body {
+          font-family: 'Inter', sans-serif;
+          background-color: var(--bg-color);
+          color: var(--primary-color);
+          margin: 0;
+          padding: 20px;
+          line-height: 1.6;
+         }
+
+         .container {
+          max-width: 850px;
+          margin: 0 auto;
+          background: var(--card-bg);
+          padding: 40px;
+          border-radius: 15px;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+         } 
+
+         header {
+          text-align: center;
+          border-bottom: 2px solid var(--bg-color);
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+         }
+
+         .profile-img {
+          width: 120px;
+          height: 120px;
+          background:#dfe6e9;
+          border-radius: 50%;
+          margin: 0 auto 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 50px;
+         }
+
+         h1 {margin: 10px 0 5px; font-weight: 600; color: #2d3436; }
+         .subtitle { color: var(--accent-color); font-weight: 400; margin-top: 0;}
+
+         .grid-info{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+          margin-bottom: 30px;
+         }
+
+         .info-card {
+          background: var(--bg-color);
+          padding: 15px;
+          border-radius: 10px;
+          text-align: center;
+         }
+
+         .info-card strong { dsiplay: block; color: var(--text-muted);font-size: 0.8rem; text-transform: uppercase;}
+
+         section { margin-bottom: 30px;}
+         h2 {
+          border-left: 4px solid var(--accent-color);
+          padding-left: 15px;
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+         }
+
+         .job { margin-bottom: 20px; }
+         .job-title { font-weight: 600; font-size: 1.1rem; }
+         .job-company {color: var(--accent-color); font-weight: 400; }
+         .job-date { color: var(--text-muted); font-size: 0.9rem; float: right; }
+
+         ul { padding-left: 20px color: #4b4b4b; }
+         li { margin-bottom: 5px; }
+
+         @media (max-width: 600px) {
+          .job-date { float: none; display: block; margin-top: 5px; }
+          .container { padding: 20px; }
+         }
+      </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <div class="profile-img"></div>
+      <h1>Kateryn Aydeé Guarcas Alvarez</h1>
+      <p class="subtitle">Profesora de Educación Artística & Estudiante de Programación</p>
+      </header>
+
+      <section>
+        <h2>Datos personales</h2>
+        <div class="grid-info">
+        <div class="info-card">
+        <strong>Nombre Completo</strong>
+        Kateryn Aydeé Guarcas Alvarez 
+      </div>
+      <div class="info-card">
+        <strong>Correo Electrónico</strong>
+        26006042@galileo.edu
+      </div>
+      <div class="info-card">
+        <strong>Ubicación</strong>
+        Guatemala
+      </div>
+    </section>
+    </div>
+
+    <section>
+      <h2>Experiencia Laboral</h2>
+
+      <div class="job">
+        <span class="job-date">Febrero 2026 - Presente</span>
+        <div class="job-title">Directora y coreógrafa</div>
+        <div class="job-company">Academia de Danza "Light It Up"</div>
+        <ul>
+          <li>Gestión administrativa y rebranding de la academia.</li>
+          <li>Instrucción en ballet, danza moderna y salsa.</li>
+          <li> Diseño de estrategias de comunicación en redes sociales.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <span class="job-date">Enero 2025 - Presente</span>
+        <div class="job-title"> Profesora de Educación Artística</div>
+        <div class="job-company">Colegio Learning Home</div>
+        <ul>
+          <li>Desarrollo de proyectos creativos adaptados a diferentes edades (Sala cuna a tercero básico).</li>
+          <li>Planificación de clases dinámicas enfocadas en la expresión artística.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Educación</h2>
+      <div class="job">
+        <span class="job-date">En Curso</span>
+        <div class="job-title">Técnico en Desarrollo de Software</div>
+        <div class="job-company">Universidad Galileo</div>
+      </div>
+    </section>
+
+    <section>
+      <h2> Habilidades Técnicas</h2>
+      <div class="grid-info" style="grid-template-columns: 1fr 1fr;">
+        <div class="info-card">
+          <strong>Programación</strong>
+          C, PHP, PSeInt, Git/GitHub
+        </div>
+        <div class="info-card">
+          <strong>Creativas</strong>
+          Danza, técnicas de costura, Diseño, Manualidades
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
